@@ -1,0 +1,32 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+	
+   		<property name="connection.url">jdbc:postgresql://localhost:5432/vtysProje</property> <!-- BD Mane -->
+   		<property name="connection.driver_class">org.postgresql.Driver</property> <!-- DB Driver -->
+   		<property name="connection.username">postgres</property> <!-- DB User -->
+   		<property name="connection.password">g181210080</property> <!-- DB Password -->
+   		
+   		<property name="dialect">org.hibernate.dialect.PostgreSQL10Dialect</property> <!-- DB Dialect -->
+		<property name="hbm2ddl.auto">update</property>
+                
+                <mapping class="com.elif.vtysproje.models.IsYeriTuru"/>
+                <mapping class="com.elif.vtysproje.models.Sektor"/>
+                <mapping class="com.elif.vtysproje.models.CalismaSekli"/>
+                <mapping class="com.elif.vtysproje.models.Sehir"/>
+                <mapping class="com.elif.vtysproje.models.EgitimDurumu"/>
+                <mapping class="com.elif.vtysproje.models.SaglikDurumu"/>
+                <mapping class="com.elif.vtysproje.models.Meslek"/>
+                <mapping class="com.elif.vtysproje.models.Mesaj"/>
+                <mapping class="com.elif.vtysproje.models.Kullanici"/>
+                <mapping class="com.elif.vtysproje.models.IsVeren"/>
+                <mapping class="com.elif.vtysproje.models.IsArayan"/>
+                <mapping class="com.elif.vtysproje.models.Danisman"/>
+                <mapping class="com.elif.vtysproje.models.Ilan"/>
+                <mapping class="com.elif.vtysproje.models.IlanAdres"/>
+                <mapping class="com.elif.vtysproje.models.KullaniciAdres"/>
+	</session-factory>
+</hibernate-configuration>
